@@ -1,0 +1,172 @@
+body{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box  ;
+    width:100vw;
+    height:auto;
+    border:2px solid;
+
+}
+
+/*FOR CONTAINER ONE*/
+.containerOne{
+    background-color:rgb(2, 4, 24);
+    width:100%;
+    height:70vh;
+    place-items: center;
+    display:flex;
+    margin:0 auto;
+    align-items: center;
+    justify-content:center;
+   
+}
+.ball{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border: 2px solid;
+    border-color: red;
+    z-index:5;
+}
+
+/*FOR LOGIN FORM*/
+.loginformCon{
+    height:280px;
+    width:300px;
+    background-color:#FFFFFF;
+    padding:10px;
+    text-align:center;    
+    border-radius:10px;    
+ 
+}
+.loginformCon.active{
+    display:none;
+}
+.email{
+    width:90%;
+    padding:5px;
+    height:26px;
+    border-radius:5px;
+    border:1px solid;
+}
+.password{
+    width:90%;
+    padding:5px;
+    height:26px;
+    border-radius:5px;
+    border:1px solid;
+    margin-top:20px;
+}
+.loginbutton{
+    width:94%;
+    padding:10px;
+    height:40px;
+    border-radius:5px;
+    font-size: 18px;
+    color:white;
+    background-color: #041c4d;
+    border:0px;
+    margin-top:20px;
+    cursor:pointer;
+
+}
+.loginbutton:hover{
+    background-color: #0078f5;
+}
+.forgotPasstxt{
+    font-size:13px;
+    color:#1F66F5;
+    margin-top:20px;
+}
+.createAcc{
+    padding:10px;
+    width:150px;
+    background-color: rgb(8,185,14);
+    font-size: 15px;
+    color:#FFFFFF;
+    border-radius:5px;
+    margin:auto;
+    cursor:pointer;
+}
+.createAcc:hover{
+    background-color: rgb(8,145,14);
+
+
+}
+.hr{
+    margin:20px 0px 20px 0px;
+}
+.forgotPasstxt{
+    cursor:pointer;
+}
+#fp{
+    text-decoration: none;
+    color:rgb(0, 0, 92);
+}
+#fp:hover{
+    text-decoration:underline;
+}
+
+
+/*FOR SIGN UP FORM */
+.signupformCon{
+    width:300px;
+    height:500px;
+    border:2px solid;   
+    margin-top:50vh;
+    padding:10px;
+    background-color: aquamarine;
+    display:none;
+    
+}
+.signupformCon.active{
+    display:block;
+    z-index:10;
+     
+
+}
+.signuptxt{
+    font-size:1.5em;
+    font-weight:bold;
+    text-align: center;
+   
+    
+}
+.exit-container{
+    width:100%;
+    cursor:pointer;
+    display:flex;   
+    align-items: end;
+    justify-content: end;
+   
+}
+
+#exit-icon{
+    width:20px;
+   
+}
+.fullname-container{
+    width:100%;
+    height:auto;
+    background-color: #041c4d;
+    display:flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+}
+.first-name-container{
+    width:50%;
+    background-color: #1F66F5;
+   
+}
+.last-name-container{
+    width:50%;
+    
+}
+#first-name{
+    width:90%;
+    display: block;
+}
+#last-name{
+    width:90%;
+    display: block;
+}
