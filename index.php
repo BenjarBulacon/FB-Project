@@ -14,25 +14,10 @@
 
 </head>
 <body>
-   
-    <div class="containerOne">
-        
-        <div class="loginformCon">
-            <form >
-                <input type="text" placeholder="Email or phone number" class="email">
-                <input type="passwrod" placeholder="Password" class="password" >
-                <input type="submit" value="Log In" class="loginbutton">
-                <div class="forgotPasstxt"><a href="" id="fp">Forgot password?</a></div>
-                <hr class="hr">
-                <div class="createAcc" id="create-account-button">Create new account</div>
 
-            </form>
-        </div>
 
-       
-
-        <div class="signupformCon" id="signup-container">               
-            <form id="signupform">
+<div class="signup-form-container" id="signup-form-container">               
+            <form id="signup-form" class="signup-form">
                 <div class="exit-container"><image src="icons/exit.svg" id="exit-icon"></image></div>        
                 <div class="signuptxt">Sign Up</div>         
                 <hr>
@@ -94,8 +79,27 @@
                 <input type="submit" id="submit-signup-form-button">
             </form>
         </div>
+   
+    <div class="containerOne">
+        
+        <div class="loginformCon">
+            <form class="login-form">
+                <input type="text" placeholder="Email or phone number" class="email">
+                <input type="passwrod" placeholder="Password" class="password" >
+                <input type="submit" value="Log In" class="loginbutton">
+                <div class="forgotPasstxt"><a href="" id="fp">Forgot password?</a></div>
+                <hr class="hr">
+                <div class="createAcc" id="create-account-button">Create new account</div>
+
+            </form>
+        </div>
 
     </div>
+
+
+
+    
+
 
 
 
@@ -112,7 +116,7 @@
         const dropdownmonth = document.getElementById("monthDropdown");
         const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
         const createAccountButton = document.getElementById("create-account-button");
-        const signup = document.getElementById("signup-container");
+        const signup = document.getElementById("signup-form-container");
         const exit = document.getElementById("exit-icon");
 
         createAccountButton.addEventListener("click", ()=>{
