@@ -31,61 +31,67 @@
 
        
 
-        <div class="signupformCon" id="signup-container">   
-        <div class="exit-container"><image src="icons/exit.svg" id="exit-icon"></image></div>        
-            <div class="signuptxt">Sign Up</div>
-            
-            
-           
-            <hr>
+        <div class="signupformCon" id="signup-container">               
             <form id="signupform">
+                <div class="exit-container"><image src="icons/exit.svg" id="exit-icon"></image></div>        
+                <div class="signuptxt">Sign Up</div>         
+                <hr>
                 <div class="fullname-container">
                     <div class="first-name-container">
                         <label>First name</label>
-                        <input type="text" placeholder="First name"  id="first-name">
+                        <input type="text"   id="first-name">
                     </div>
                     <div class="last-name-container">
                         <label>Last name</label>
-                        <input type="text" placeholder="Last name"  id="last-name">
+                        <input type="text"  id="last-name">
                     </div>                                     
                 </div>
 
-                <div>
-                    <input type="text" placeholder="Mobile number or email" class="email">
-                </div>
-                <div>
-                    <input type="password" placeholder="New password" class="password">
+                <div class="email-container">
+                    <label>Mobile number or Email</label>
+                    <input type="text" class="email">
                 </div>
 
-                <div>
+                <div class="password-container">
+                    <label>Password</label>
+                    <input type="password"  class="password">
+                </div>
+
+                <div class="birthday-container">
                     <label>Birthday</label>
-                    <div>
-                        <select id="monthDropdown"></select>
-                    </div>
-
-                    <div>
-                        <select id="dayDropdown"></select>
-                    </div>
-
-                    <div>
-                        <select id="yearDropdown"></select>                                               
-                       
-                    </div>
-                    <div>
+                    <div class="birthday-select-container">
                         <div>
-                            <label>Female</label>
+                            <select id="monthDropdown"></select>
+                        </div>
+                        <div>
+                            <select id="dayDropdown"></select>
+                        </div>
+                        <div>
+                            <select id="yearDropdown"></select>                                               
+                        </div>  
+                    </div>            
+                </div>
+
+                    
+                <div class="gender-container">
+                    <label>Gender</label>
+                    <div class="gender-select-container">
+                        <div>
                             <input type="radio" name="gender">
+                            <label>Female</label>                       
                         </div>                      
                         <div>
-                            <label>Male</label>
                             <input type="radio" name="gender">
+                            <label>Male</label>                       
                         </div>
                         <div>
-                            <label>Custom</label>
                             <input type="radio" name="gender">
+                            <label>Custom</label>                      
                         </div>
-                    </div>
-                </div>
+                    </div>                       
+                </div>  
+                
+                <input type="submit" id="submit-signup-form-button">
             </form>
         </div>
 

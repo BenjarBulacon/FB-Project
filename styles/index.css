@@ -90,8 +90,6 @@ body{
 }
 .createAcc:hover{
     background-color: rgb(8,145,14);
-
-
 }
 .hr{
     margin:20px 0px 20px 0px;
@@ -111,12 +109,12 @@ body{
 /*FOR SIGN UP FORM */
 .signupformCon{
     width:300px;
-    height:500px;
-    border:2px solid;   
+    height:auto;
     margin-top:50vh;
     padding:10px;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     display:none;
+    border-radius:10px;
     
 }
 .signupformCon.active{
@@ -148,14 +146,14 @@ body{
 .fullname-container{
     width:100%;
     height:auto;
-    background-color: #041c4d;
+    
     display:flex;
     flex-wrap: wrap;
-    border: 2px solid red;
+   
 }
 .first-name-container{
     width:50%;
-    background-color: #1F66F5;
+    
    
 }
 .last-name-container{
@@ -170,3 +168,47 @@ body{
     width:90%;
     display: block;
 }
+
+.email-container{
+    margin-top:10px;
+
+}
+.password-container{
+    margin-top:10px;
+}
+.password{
+    margin-top:0px;
+}
+.birthday-container{
+    margin-top:10px;
+}
+
+.birthday-select-container div{
+    display:inline-block;
+}
+.birthday-select-container div select{
+    width:80px;
+}
+.gender-container{
+    margin-top:10px;
+}
+.gender-select-container div{
+    display:inline-block;
+}
+#submit-signup-form-button{
+    width:100%;
+    background-color: rgb(8,185,14);
+    border:0px;
+    font-size:25px;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+    margin-top:20px;
+    height:40px;
+
+
+}
+#submit-signup-form-button:hover{
+    background-color: rgb(8,145,14);
+}
+ 
