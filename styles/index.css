@@ -103,7 +103,7 @@ body{
 .signup-form-container{
     height:0px;
     width:100vw;
-    background-color: rgba(0, 0, 0, 0.596);   
+    background-color: rgba(255, 255, 255, 0.74);   
     z-index: 10;
     position:fixed;
     transition: height .4s ;
@@ -115,10 +115,10 @@ body{
 
 }
 .signup-form-container.active{
-    height:100vh;
+    height:75vh;
 }
 .signup-form{
-    width:300px;
+    width:400px;
     height:auto;  
     padding:10px;
     background-color: rgb(255, 255, 255);   
@@ -173,15 +173,24 @@ body{
     display: block;
 }
 
-.email-container{
+.signup-email-container{
     margin-top:10px;
 
 }
-.password-container{
+.signup-email-container label{
+    display:block;
+}
+.signup-email-container .email{
+    width:95%;
+
+}
+.signup-password-container{
     margin-top:10px;
 }
-.password{
+.signup-password-container .password{
     margin-top:0px;
+    display:block;
+    width:95%;
 }
 .birthday-container{
     margin-top:10px;

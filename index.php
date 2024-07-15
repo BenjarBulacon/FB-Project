@@ -16,7 +16,7 @@
 <body>
 
 
-<div class="signup-form-container" id="signup-form-container">               
+        <div class="signup-form-container" id="signup-form-container">               
             <form id="signup-form" class="signup-form">
                 <div class="exit-container"><image src="icons/exit.svg" id="exit-icon"></image></div>        
                 <div class="signuptxt">Sign Up</div>         
@@ -32,12 +32,12 @@
                     </div>                                     
                 </div>
 
-                <div class="email-container">
+                <div class="signup-email-container">
                     <label>Mobile number or Email</label>
                     <input type="text" class="email">
                 </div>
 
-                <div class="password-container">
+                <div class="signup-password-container">
                     <label>Password</label>
                     <input type="password"  class="password">
                 </div>
@@ -103,59 +103,7 @@
 
 
 
-    <script>
-
-
-
-
-        const days = 31;
-        const startYear = 2024;
-        const endYear = 1905;
-        const dropdownyear = document.getElementById("yearDropdown");
-        const dropdownday = document.getElementById("dayDropdown");
-        const dropdownmonth = document.getElementById("monthDropdown");
-        const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-        const createAccountButton = document.getElementById("create-account-button");
-        const signup = document.getElementById("signup-form-container");
-        const exit = document.getElementById("exit-icon");
-
-        createAccountButton.addEventListener("click", ()=>{
-            signup.classList.add("active");
-
-        })
-        exit.addEventListener("click", ()=>{
-            signup.classList.toggle("active");
-
-        })
-
-
-        for( let m =0; m < months.length ;m++){
-            let mon =document.createElement("option");
-            mon.value= months[m];
-            mon.textContent =  months[m];
-            dropdownmonth.append(mon);
-            
-        }
-
-
-        for( let x =1; x <= days; x++ ){
-            let dayoption = document.createElement("option");
-            dayoption.value= x;
-            dayoption.textContent = x;
-            dropdownday.appendChild(dayoption);
-        }
-
-        for (let year = startYear; year >= endYear; year--) {
-            let option = document.createElement("option");
-            option.value = year;
-            option.textContent = year;
-            dropdownyear.appendChild(option);
-        }
-
-       
-
-
-    </script>
+    <script src="scripts/index.js"></script>
     
 </body>
 </html>
