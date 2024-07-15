@@ -8,14 +8,14 @@
     <link href="styles/index.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
 
-
+        <!-- FOR SIGNUP-->
         <div class="signup-form-container" id="signup-form-container">               
             <form id="signup-form" class="signup-form">
                 <div class="exit-container"><image src="icons/exit.svg" id="exit-icon"></image></div>        
@@ -79,7 +79,8 @@
                 <input type="submit" id="submit-signup-form-button">
             </form>
         </div>
-   
+
+    <!-- FOR LOGIN-->
     <div class="containerOne">
         
         <div class="loginformCon">
